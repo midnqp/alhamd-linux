@@ -8,10 +8,10 @@
 
 
 
-----THE OPENING----
+## Prelude
 This repository provides required scripts to build a very minimal OS.
 ```
-	[+] build-rootfs.sh    - Create a `chroot`-able rootfs.
+  [+] build-rootfs.sh    - Create a chroot-able rootfs.
   [-] package-manager.py - Debian-based precompiled binaries
                          - With dependencies.
   [+] resources/         - Help you take off! Where do you proceed next.
@@ -23,20 +23,20 @@ This repository provides required scripts to build a very minimal OS.
 
 An operating system may be called "independent", if it is mature enough to 
 host a development environment for itself. That requires 3 components:
-          -  A Kernel
-          -  A commandline
-          -  A toolchain (libc, gcc, make, ...)
+  -  A Kernel
+  -  A commandline
+  -  A toolchain (a `libc` implementation, `gcc`, `make`, ...)
 
-`alhamd-linux` tries a different approach to get far away from systemd-like 
+`alhamd-linux` tries a different approach to get far away from `systemd`-like 
 higher-level abstraction softwares to achieve the simplest & most minimal build 
 of an operating system.
 
 
 
 
-----INEVITABLE MARCH TOWARDS THE GRAND ENDING----
-alhamd-linux will be considered mature if:
-- hamd (alhamd-linux package manager) can resolve dependency conflicts. Using Debian prebuilt binaries is completely okay. We cannot use `apt` because it brings `systemd-*`.
+## Roadmap
+`alhamd-linux` will be considered mature if:
+- `hamd` (alhamd-linux package manager) can resolve dependency conflicts. Using Debian prebuilt binaries is completely okay. We cannot use `apt` because it brings `systemd-*`.
 - `Xorg` + `dwm`
 - `Chromium`
 - Be able to do `hamd install ~/Downloads/opera-stable-latest.deb`
