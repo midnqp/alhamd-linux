@@ -17,7 +17,8 @@ This repository provides required scripts to build a very minimal OS.
 | include
     | config
     | vmlinuz (Debian precompiled, compressed Linux kernel)
-	  | initrd (Debian default init ramdisk)
+    | initrd (Debian default init ramdisk)
+    | toybox (Swiss-Army-Knife utility tool, contains bash)
 ```
 
 
