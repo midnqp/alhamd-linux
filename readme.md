@@ -11,12 +11,14 @@ Headstart of context to whoever wants to understand/build an OS.
 ## Prelude
 This repository provides required scripts to build a very minimal OS.
 ```
-[+] build-rootfs.sh    - Create a chroot-able rootfs.
-[-] package-manager.py - Debian-based precompiled binaries
-											 - With dependencies.
-[+] resources/         - Help you take off! Where do you proceed next.
-											 - Things to try/learn next. Awesome-list.
-[+] toolchain          - musl-libc, gcc, make, ...
+.
+| build-rootfs.sh    - Create a chroot-able rootfs
+| hamd.py - Debian-based precompiled binaries
+| include
+    | config
+    | vmlinuz (Debian precompiled, compressed Linux kernel)
+    | initrd (Debian default init ramdisk)
+    | toybox (Swiss-Army-Knife utility tool, contains bash)
 ```
 
 
